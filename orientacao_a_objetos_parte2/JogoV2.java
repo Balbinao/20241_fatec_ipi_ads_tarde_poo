@@ -2,19 +2,18 @@ import java.util.Random;
 public class JogoV2 {
      public static void main(String[] args) throws Exception{
           var p = new Personagem();
-          var p2 = new Personagem();
-          var p3 = new Personagem();
+          var p2 = new Personagem(1, 2, 10);
+          var p3 = new Personagem(2, 10, 4);
           var gerador = new Random();
           p.nome = "Lula";
           p2.nome = "Soneca";
           p3.nome = "João";
-          p2.sono = 10;
-          p2.energia = 1;
-          p2.fome = 2;
-          p3.fome = 10;
-          p3.energia = 2;
-          p3.sono = 4;
-
+          // p2.sono = 10;
+          // p2.energia = 1;
+          // p2.fome = 2;
+          // p3.fome = 10;
+          // p3.energia = 2;
+          // p3.sono = 4;
           while (true){
                int oQueFazer = gerador.nextInt(4);
                switch(oQueFazer){
@@ -37,9 +36,7 @@ public class JogoV2 {
                System.out.println(p);
                System.out.println(p2);
                System.out.println(p3);
-               System.out.println("********************");
-               
-               
+               System.out.println("********************");                              
                Thread.sleep(3000);
           }
      }
