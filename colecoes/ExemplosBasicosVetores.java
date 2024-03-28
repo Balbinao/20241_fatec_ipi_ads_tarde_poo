@@ -46,7 +46,6 @@ public class ExemplosBasicosVetores {
         for(Personagem p : personagens){
             
             p.nome = "Pedro";
-            System.out.println(p);
         }
         //System.out.println(personagens[0].nome);
     }
