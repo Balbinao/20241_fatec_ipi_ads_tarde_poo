@@ -1,6 +1,6 @@
 public class Personagem{
     //variaveis de instancia
-    String nome;
+    String nome; //nome nasce valendo NULL
     private int energia = 10;
     private int fome = 0;
     private int sono = 0;
@@ -60,6 +60,6 @@ public class Personagem{
         }
     }
     public String toString(){
-        return String.format("%s:(e%d f%d s%d)", nome, energia, fome, sono); 
+        return String.format("%s: (e%d f%d s%d)", nome, energia, fome, sono); 
     }
 }
