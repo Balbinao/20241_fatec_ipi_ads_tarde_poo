@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Personagem{
     //variaveis de instancia
     String nome; //nome nasce valendo NULL
@@ -61,5 +63,13 @@ public class Personagem{
     }
     public String toString(){
         return String.format("%s: (e%d f%d s%d)", nome, energia, fome, sono); 
+    }
+    void cacarNaSelva() {
+        var gerador = new Random();
+        var algoRuimAconteceu = gerador.nextBoolean();
+        if(algoRuimAconteceu) {
+            
+        }
+        
     }
 }
